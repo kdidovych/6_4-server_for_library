@@ -1,0 +1,45 @@
+### Get all books
+
+GET http://localhost:5000/api/v1/books
+Content-Type: application/json
+
+### Get book with id
+
+GET http://localhost:5000/api/v1/book/1
+Content-Type: application/json
+
+### Create book @TODO remove data subobject after validation is done
+
+POST http://localhost:5000/api/v1/book
+Content-Type: application/json
+
+{
+  "title": "WarCraft",
+  "genre_id": 5,
+  "shelf_id": 1,
+  "description": "WarCraft 3 is a legendary game...",
+  "image": "https://static.wikia.nocookie.net/dreamworks/images/0/0a/Megamind_Profile.jpg",
+  "createdAt": "",
+  "updatedAt": "2026-09-25T11:45:48.205Z"
+}
+
+### UPDATE book
+
+PUT http://localhost:5000/api/v1/book
+Content-Type: application/json
+
+{
+  "id": 21,
+  "title": "WarCraft3 Reforged",
+  "genre_id": 5,
+  "shelf_id": 1,
+  "description": "WarCraft 3 is a legendary game...",
+  "image": "https://static.wikia.nocookie.net/dreamworks/images/0/0a/Megamind_Profile.jpg",
+  "createdAt": "",
+  "updatedAt": "2026-09-25T11:45:48.205Z"
+}
+
+### Delete book with id
+
+DELETE http://localhost:5000/api/v1/book/210
+Content-Type: application/json

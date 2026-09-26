@@ -1,0 +1,41 @@
+### Get all authors
+
+GET http://localhost:5000/api/v1/authors
+Content-Type: application/json
+
+### Get author with id
+
+GET http://localhost:5000/api/v1/author/1
+Content-Type: application/json
+
+### Create author @TODO remove data subobject after validation is done
+
+POST http://localhost:5000/api/v1/author
+Content-Type: application/json
+
+{
+  "full_names": "K_9",
+  "email": "didovych.k.v+9@gmail.com",
+  "nationality_id": 2,
+  "createdAt": "",
+  "updatedAt": "2026-09-25T11:45:48.205Z"
+}
+
+### UPDATE author
+
+PUT http://localhost:5000/api/v1/author
+Content-Type: application/json
+
+{
+  "id": 2700,
+  "full_name": "K_5m8",
+  "email": "didovych.k.v+5m8@gmail.com",
+  "nationality_id": 2,
+  "createdAt": "2026-09-25T11:45:48.205Z",
+  "updatedAt": "2026-09-25T11:45:48.205Z"
+}
+
+### Delete author with id
+
+DELETE http://localhost:5000/api/v1/author/24
+Content-Type: application/json

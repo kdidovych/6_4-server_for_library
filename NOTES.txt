@@ -1,0 +1,91 @@
+Q1: Why controllers (classes) file name from lowercase and have "...Controller", while models returns functions, but
+written from Capital and do not have "...Model" suffix?
+
+N1: Find the difference and reason why it is not working:
+postgres=#
+postgres-#
+
+Q2: When should I use/create async function and when sync?
+
+N2: https://sequelize.org/docs/v7/
+looks like v7-alpha differ a lot from v6-stable
+
+N3: bd in code. mistake from db?
+
+Q3: what are 3 items there?
+why production and test point to localhost? Why this is not in .env?
+practise/9_freshctc_toolkit-exam-project-2025-01/server/src/config/postgresConfig.json
+
+Q4: ow in Node.js cli command are used to be created? What folder/principles?
+
+Q5: Why we collect all models in practise/9_freshctc_toolkit-exam-project-2025-01/server/src/models/index.js even when we
+do not need them by requests?
+
+N4: начал делать 42 на sequilize, потом понял что надо на pg (Pool)
+
+N5: PG:
+Pool is a set of client connections.
+Transactions will not work.
+I will use Client instead;
+
+Q6: у меня создавался файл "5000;" в папке "src".
+Как оказалось - в .env я указал
+SERVER_PORT=5000;
+с ";"
+.env создает файли - разве что-то такое допустимо для модуля, котрий должен их просто читать и передавать?
+
+N6: postgresql
+если имя таблици без кавичек - то оно переводит все в ловеркейс
+ЗАЧЕМ?
+
+N7:
+.map НЕ проходит по пустим елементам, созданним через Array(5)
+
+Q8:
+somejsmidlewarefile with .js.mw - такое есть?
+
+Q9:
+customers updatedAt (почему-то не рекваер и содержит null)
+Я хоть и сделал схему валидацию под таблицу, но во время самой валидации подставляю значения, если не задани
+
+N8:
+success sql => id=24
+error sql
+success sql => id=26
+
+Q10:
+how to debug. Settings
+
+Q11:
+Possible issue/error
+Why each second request in WebStorm from .http file results with next error
+DELETE http://localhost:5000/api/v1/author/24
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused (connect failed): localhost/127.0.0.1:5000
+One likely issue is in AbstractEntity.js: client is declared with const inside the try block but referenced in finally, where it is out of scope. That throws when the handler finishes. Please reproduce under Debug so we can confirm whether that error is also causing the server to stop listening.
+
+Q12:
+Как бить с закритием клиента, если определить его надо внутри try, а закрить в finally
+
+N9:
+customer field do not have unique fields
+
+Q13:
+откуда взялась еще одна переменная в начале? (error, req,res,next)
+practise/9_freshctc_toolkit-exam-project-2025-01/server/src/handlerError/handler.js
+в роутере же ее нет, передаются они одинаково
+app.use(router);
+app.use(handlerError);
+
+N10:
+не нравится что validators лежат в мидлваре - тяжело найти
+
+N11:
+while debugging, it will never stop in index.js unlike index.php. Put breakpoints in router or controller
+
+Q14:
+why we do not provide options to parent super call?
+practise/9_freshctc_toolkit-exam-project-2025-01/server/src/errors/ApplicationError.js
+
+Q15:
+void usage
+practise/6_4-Server_for_Library/server/src/handlerError/request.js
