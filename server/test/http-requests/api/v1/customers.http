@@ -15,7 +15,7 @@ Content-Type: application/json
 
 {
   "full_name": "K_5m8",
-  "email": "didovych.k.v+5m8@gmail.com",
+  "email": "test.k.v+5m8@gmail.com",
   "phone": "0931234567",
   "password": "qwerty",
   "createdAt": "2026-09-25T11:45:48.205Z",
@@ -30,7 +30,7 @@ Content-Type: application/json
 {
   "id": 12,
   "full_name": "K_12",
-  "email": "didovych.k.v+12@gmail.com",
+  "email": "test.k.v+12@gmail.com",
   "phone": "0931234567",
   "password": "qwerty",
   "createdAt": "2026-09-25T11:45:48.205Z",

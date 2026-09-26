@@ -1,5 +1,10 @@
 <a href="https://freshcode-training.kwiga.com/courses/javascript-developer-ru/prakticheskoe-zadanie-30">Link
 to kwiga</a>
+
+## FOR MENTOR
+1. errors will be logged to file from PUT requests (make primitive one for myself. Will use pino or other in future)
+2. use 'server/test/http-requests/api/v1/authors.http" files to send requests
+
 <h1>📘 Практическое задание. 42. Server 02. Server for Library</h1>
 <section>
     <h2>Server. Server for Library</h2>

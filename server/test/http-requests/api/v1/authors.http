@@ -14,8 +14,8 @@ POST http://localhost:5000/api/v1/author
 Content-Type: application/json
 
 {
-  "full_names": "K_9",
-  "email": "didovych.k.v+9@gmail.com",
+  "full_name": "K_9",
+  "email": "test+9@gmail.com",
   "nationality_id": 2,
   "createdAt": "",
   "updatedAt": "2026-09-25T11:45:48.205Z"
@@ -27,9 +27,9 @@ PUT http://localhost:5000/api/v1/author
 Content-Type: application/json
 
 {
-  "id": 2700,
+  "id": 27,
   "full_name": "K_5m8",
-  "email": "didovych.k.v+5m8@gmail.com",
+  "email": "test.k.v+5m8@gmail.com",
   "nationality_id": 2,
   "createdAt": "2026-09-25T11:45:48.205Z",
   "updatedAt": "2026-09-25T11:45:48.205Z"
