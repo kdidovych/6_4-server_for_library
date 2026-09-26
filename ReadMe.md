@@ -2,8 +2,10 @@
 to kwiga</a>
 
 ## FOR MENTOR
-1. errors will be logged to file from PUT requests (make primitive one for myself. Will use pino or other in future)
-2. use 'server/test/http-requests/api/v1/authors.http" files to send requests
+1. Errors will be logged to file from PUT requests only (put not existent id in request)
+(I make own primitive logger to practise a bit this time. Will use pino or other in future)
+2. use .http files from 'server/test/http-requests/api/v1/" to test requests
+3. NOTES.txt - is a draft of questions and notes I was faced during task completion
 
 <h1>📘 Практическое задание. 42. Server 02. Server for Library</h1>
 <section>
