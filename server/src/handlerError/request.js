@@ -6,16 +6,9 @@ const CODES = {
     500: "Internal Server Error"
 };
 
-/** @TODO use pino as example for logging */
-const logError = async (error) => {
-    console.log("Message: ", error.message);
-    console.log("Cause: ", error.cause);
-}
-
 module.exports = (error, req, res, next) => {
     if (error.shouldBeLogged) {
         logger.log(error);
-        void logError(error);
     }
 
     if (error instanceof ResponseError) {

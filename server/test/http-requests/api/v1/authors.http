@@ -8,7 +8,7 @@ Content-Type: application/json
 GET http://localhost:5000/api/v1/author/1
 Content-Type: application/json
 
-### Create author @TODO remove data subobject after validation is done
+### Create author
 
 POST http://localhost:5000/api/v1/author
 Content-Type: application/json

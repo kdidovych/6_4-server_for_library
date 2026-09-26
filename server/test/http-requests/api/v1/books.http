@@ -8,7 +8,7 @@ Content-Type: application/json
 GET http://localhost:5000/api/v1/book/1
 Content-Type: application/json
 
-### Create book @TODO remove data subobject after validation is done
+### Create book
 
 POST http://localhost:5000/api/v1/book
 Content-Type: application/json

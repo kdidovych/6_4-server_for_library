@@ -8,7 +8,7 @@ Content-Type: application/json
 GET http://localhost:5000/api/v1/customer/1
 Content-Type: application/json
 
-### Create customer @TODO remove data subobject after validation is done
+### Create customer
 
 POST http://localhost:5000/api/v1/customer
 Content-Type: application/json

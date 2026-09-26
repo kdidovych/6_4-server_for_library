@@ -19,7 +19,7 @@ module.exports = class Logger {
         const logMessage = `[${timestamp}]\n${errorMessage}\n\n`;
         fs.appendFile(logFilePath, logMessage, 'utf8', (err) => {
             if (err) {
-                console.log(`Cannot log error: ${error.message}. NEW Error: ${e.message}`);
+                console.log(`Cannot log error: ${error.message}. NEW Error: ${err.message}`);
             }
         });
     }
